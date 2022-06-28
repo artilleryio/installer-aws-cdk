@@ -99,7 +99,7 @@ The stack supports a variety of deployment configurations.
 
 By default, Control Panel will be deployed as an internal service (behind an internal ALB), and will only be accessible through a VPN. To create an internet-facing deployment, set the following environment variables:
 
-- `USE_INTERNET_FACING_ALB=true`
+- `INTERNET_FACING_URL=https://my.cert.domain.com`
 - `USE_TLS=true`
 - `ACM_CERT_ARN=arn:aws:acm:arn-of-an-acm-certificate-to-use`
 
