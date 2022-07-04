@@ -110,9 +110,10 @@ Available versions:
 
 By default, the dashboard will be deployed as an internal service (behind an internal ALB), and will only be accessible through a VPN. To create an internet-facing deployment, set the following environment variables:
 
-- `APP_URL=my.cert.domain.com`
+- `USE_INTERNET_FACING_ALB=true`
 - `USE_TLS=true`
 - `ACM_CERT_ARN=arn:aws:acm:arn-of-an-acm-certificate-to-use`
+- `APP_DOMAIN=my-cert-domain.com`
 
 #### VPC
 
